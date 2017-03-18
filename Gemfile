@@ -64,3 +64,8 @@ end
 
 # => Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.3.6'
+
+# => FactoryGirl for usage in testing
+gem 'factory_girl_rails', '4.7.0'
+# => Faker for creating fake data in FactoryGirl or Seeds
+gem 'faker', '1.6.6'
