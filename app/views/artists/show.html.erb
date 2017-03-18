@@ -1,0 +1,23 @@
+<!--
+Artist Show Page
+
+Add a show page for every artist that meets the following requirements:
+Visitors can see a list of all the songs associated to the artist.
+Visitors can add a new song to the artist.
+Visitors can remove any song associated to the artist.
+Visitors can delete an artist, including all songs associated to that artist.
+-->
+
+<h1><%= @artist.name %></h1>
+
+<p>These are his/her songs:</p>
+
+<!-- itterate over each song of the artist -->
+<ul>
+<% @artist.songs.each do |song| %>
+  <li>
+    <h3><%= song.name %></h3>
+  </li>
+
+<% end %>
+</ul>
