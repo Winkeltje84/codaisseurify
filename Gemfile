@@ -61,3 +61,6 @@ group :test do
   # => Capybara for testing
   gem 'capybara', '~> 2.9', '>= 2.9.1'
 end
+
+# => Bootstrap for styling
+gem 'bootstrap-sass', '~> 3.3.6'
