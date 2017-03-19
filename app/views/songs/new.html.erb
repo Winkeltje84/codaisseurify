@@ -1,0 +1,15 @@
+<h1>New Song</h1>
+
+<p>What song would you like to add to ARTIST NAME?</p>
+
+<%= form_for [@artist, @song] do |f| %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

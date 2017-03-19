@@ -14,10 +14,11 @@ Visitors can delete an artist, including all songs associated to that artist.
 
 <!-- itterate over each song of the artist -->
 <ul>
-<% @artist.songs.each do |song| %>
+<% @songs.each do |song| %>
   <li>
     <h3><%= song.name %></h3>
   </li>
 
 <% end %>
-</ul>
+
+<%= link_to "[New Song]", new_artist_song_path(@artist.id) %>
