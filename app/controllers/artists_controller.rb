@@ -5,14 +5,19 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = Artist.find(params[:id])
+    set_artist
     @songs = @artist.songs
   end
 
-
-
+  def destroy
+    set_artist
+    @artist.destroy
+  end
 
 private
 
+def set_artist
+  @artist = Artist.find(params[:id])
+end
 
 end
