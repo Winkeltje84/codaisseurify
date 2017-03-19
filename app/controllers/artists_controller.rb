@@ -11,6 +11,7 @@ class ArtistsController < ApplicationController
 
 
 
+
 private
 
 
