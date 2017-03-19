@@ -15,7 +15,9 @@ class SongsController < ApplicationController
       redirect_to new_artist_song_path(@artist.id)
     end
 
+    def destroy
 
+    end
   end
 
   private
