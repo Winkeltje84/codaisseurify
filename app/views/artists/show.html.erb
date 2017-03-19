@@ -18,7 +18,7 @@ Visitors can delete an artist, including all songs associated to that artist.
   <li>
     <h3><%= song.name %></h3>
 
-    <p><%= link_to '[Destroy song]', artist_song_path(@artist.id, song.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <p><%= link_to '[Destroy song]', artist_song_path(@artist.id, song.id), method: :delete, data: { confirm: 'Are you sure you want to delete this song?' } %></p>
 
   </li>
 <% end %>
@@ -32,4 +32,4 @@ Visitors can delete an artist, including all songs associated to that artist.
 
 <h1>Destroy artist</h1>
 <p>Remember: this will delete all their songs as well!</p>
-<p><%= link_to 'Destroy Artist & related Songs', artist_path(@artist.id, @artist.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<p><%= link_to 'Destroy Artist & related Songs', artist_path(@artist.id, @artist.id), method: :delete, data: { confirm: 'Are you sure you want to destroy?' } %></p>
