@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   before_action :set_song, only: [:show, :edit, :update, :destroy]
 
   def new
-    @artist = Artist.find(params[:artist_id])
+    set_artist
     @song = Song.new
   end
 
