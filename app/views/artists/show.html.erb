@@ -33,3 +33,7 @@ Visitors can delete an artist, including all songs associated to that artist.
 <h1>Destroy artist</h1>
 <p>Remember: this will delete all their songs as well!</p>
 <p><%= link_to 'Destroy Artist & related Songs', artist_path(@artist.id), method: :delete, data: { confirm: 'Are you sure you want to destroy?' } %></p>
+
+<hr>
+
+<%= link_to "[Back to Artist overview]", root_path %>
