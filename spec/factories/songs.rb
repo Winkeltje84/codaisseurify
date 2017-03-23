@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :song do
-    name {  }
-    artist { Faker::Number(500)}
+    name { Faker::GameOfThrones.character }
+    artist { Faker::Number(500) }
   end
 end

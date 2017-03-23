@@ -1,13 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Song, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+RSpec.describe "Association with artist" do
 
-Rspec.describe "association with artist" do
-
-  it "belongs to a user" do
-    room = artist.songs.new(name: "Test song")
+  it "belongs to an artist" do
+    artist = build(:artist, name: "Teddie", image: "www.mooiefoto.nl/1")
+    song = build(:song, name: "Test song", artist: artist)
 
     expect(song.artist).to eq(artist)
   end
