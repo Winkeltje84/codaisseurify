@@ -24,3 +24,18 @@ Seeds
 - Use the Rails console to check that the database contains the data after seeding. Make the following checks:
   1. Get the artist of the first song. Which command did you use?
   2. Get all the songs for the first artist. Which command did you use?
+
+## Running Locally
+Make sure you have [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/) installed.
+You should also have a [Postgresql](https://www.postgresql.org/) database running.
+
+  1. `git clone git@github.com:Winkeltje84/codaisseurify.git`
+  2. `cd codaisseurify`
+  3. `bundle install`
+  4. `rails db:create db:migrate db:seed`
+  5. `rails server`
+  6. Go to your [localhost](http://localhost:3000) on port 3000(default)
+
+## Related Documentation
+  * [Ruby on Rails](http://rubyonrails.org/)
+  * [The Next Closet website](https://thenextcloset.com/)
