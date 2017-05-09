@@ -1,3 +1,9 @@
+# Codaisseurify
+> Individual assignment for week #2 of Codaisseur Academy
+
+## About
+In this assignment, you will create a new Rails app called Codaisseurify. This application will be in charge of managing a collection of songs and their associated artists.
+
 ## Basic Requirements
 
 Generate the App
